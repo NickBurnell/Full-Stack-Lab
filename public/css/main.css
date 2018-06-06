@@ -5,8 +5,11 @@
 }
 body {
     background: #1e9600;
-  background: -webkit-linear-gradient(to right, #1e9600, #fff200, #ff0000);
-  background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+    background: -webkit-linear-gradient(to right, #1e9600, #fff200, #ff0000);
+    background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+}
+.main {
+    display: flex;
 }
 input {
     display: flex;
@@ -17,7 +20,6 @@ input {
     border: 1px solid orange;
 }
 button {
-    /* font-family: 'Inconsolata', monospace; */
     padding: 4px;
     width: 35%;
     border-radius: 4px;

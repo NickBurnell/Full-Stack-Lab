@@ -3,21 +3,22 @@
 const cartItems = {
     template: `
     <h1>Shopify Your Life</h1>
-    
-    <section ng-repeat="item in $ctrl.cartItems">
-        <h3>{{ item.product }}</h3>
-        <p>Price: {{ item.price }}</p>
-        <p>Quantity: {{ item.quantity }}</p>
-        <a href="" ng-click="$ctrl.deleteItem(item.id);" class="delete">Delete</a>
-    </section>
+    <section class="main">
+        <section ng-repeat="item in $ctrl.cartItems">
+            <h3>{{ item.product }}</h3>
+            <p>Price: {{ item.price }}</p>
+            <p>Quantity: {{ item.quantity }}</p>
+            <a href="" ng-click="$ctrl.deleteItem(item.id);" class="delete">Delete</a>
+        </section>
 
-    <form ng-submit="$ctrl.addItem($ctrl.newItem);" class="form">
-        <h5>Add New Item</h5>
-        <input type="text" placeholder="Product Name.." ng-model="$ctrl.newItem.product">
-        <input type="text" placeholder="Price.." ng-model="$ctrl.newItem.price">
-        <input type="text" placeholder="Quantity.." ng-model="$ctrl.newItem.quantity">
-        <button>Add Item</button>
-    </form>
+        <form ng-submit="$ctrl.addItem($ctrl.newItem);" class="form">
+            <h5>Add New Item</h5>
+            <input type="text" placeholder="Product Name.." ng-model="$ctrl.newItem.product">
+            <input type="text" placeholder="Price.." ng-model="$ctrl.newItem.price">
+            <input type="text" placeholder="Quantity.." ng-model="$ctrl.newItem.quantity">
+            <button>Add Item</button>
+        </form>
+    </section>
     `,
     controller: ["CartService", function(CartService) {
         const vm = this;
