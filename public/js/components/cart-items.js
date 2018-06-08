@@ -9,7 +9,7 @@ const cartItems = {
                 <h3>{{ item.product }}</h3>
                 <i ng-click="$ctrl.deleteItem(item.id);" class="material-icons">clear</i>
             </div>
-            <p>Price: $ {{ item.price }}</p>
+            <p>Price: {{ item.price | currency }}</p>
             <div class="quantityUpdate">
                 <button type="button" ng-click="$ctrl.decrement(item)"> - </button>
                 <p>Quantity: {{ item.quantity }}</p>
