@@ -10,6 +10,7 @@ const cartItems = {
             <p>Quantity: {{ item.quantity }}</p>
             <a href="" ng-click="$ctrl.deleteItem(item.id);" class="delete">Delete</a>
         </section>
+    </section>
 
         <form ng-submit="$ctrl.addItem($ctrl.newItem);" class="form">
             <h5>Add New Item</h5>
@@ -18,7 +19,6 @@ const cartItems = {
             <input type="number" placeholder="Quantity.." ng-model="$ctrl.newItem.quantity">
             <button>Add Item</button>
         </form>
-    </section>
     `,
     controller: ["CartService", function(CartService) {
         const vm = this;
