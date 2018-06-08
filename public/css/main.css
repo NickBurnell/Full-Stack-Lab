@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: #1e9600;
-    background: -webkit-linear-gradient(to right, #1e9600, #fff200, #ff0000);
-    background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+    background-image: url("shoppingcart.jpg");
 }
 .main {
     display: flex;
