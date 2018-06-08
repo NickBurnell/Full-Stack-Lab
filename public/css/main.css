@@ -28,6 +28,7 @@ body {
     margin: 10px 5px;
     text-align: center;
     padding: 5px;
+    border-radius: 5px;
 
 }
 .quantityUpdate {
