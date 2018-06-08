@@ -24,7 +24,7 @@ body {
 .dataDisplay {
     width: 45%;
     height: 175px;
-    background-color: rgba(42, 49, 50, 0.9);
+    background-color: rgba(42, 49, 50, 0.95);
     margin: 10px 5px;
     text-align: center;
     padding: 5px;

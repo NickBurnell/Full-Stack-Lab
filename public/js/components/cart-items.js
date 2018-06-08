@@ -21,7 +21,7 @@ const cartItems = {
         <form ng-submit="$ctrl.addItems($ctrl.newItem);" class="form">
             <h5>Add New Item</h5>
             <input type="text" placeholder="Product Name.." ng-model="$ctrl.newItem.product">
-            <input type="number" placeholder="Price.." ng-model="$ctrl.newItem.price">
+            <input type="number" step="0.01" placeholder="Price.." ng-model="$ctrl.newItem.price">
             <input type="number" placeholder="Quantity.." ng-model="$ctrl.newItem.quantity">
             <button>Add Item</button>
         </form>
